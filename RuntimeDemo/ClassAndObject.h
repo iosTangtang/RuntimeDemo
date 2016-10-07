@@ -10,10 +10,14 @@
 
 @interface ClassAndObject : NSObject
 
+- (void)hello:(NSInteger)index;
+
 - (void)showAddress;
 
 - (void)showRelation;
 
 - (void)showDifferenceWithClassCluster;
+
+- (void)showHelloMethodSEL;
 
 @end

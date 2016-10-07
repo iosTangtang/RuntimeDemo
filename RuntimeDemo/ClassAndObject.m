@@ -11,6 +11,10 @@
 
 @implementation ClassAndObject
 
+- (void)hello:(NSInteger)index {
+    NSLog(@">>>>>>ClassAndObject hello<<<<<<");
+}
+
 - (void)showAddress {
     
     NSLog(@">>>>>>ClassAndObject showAddressMethod<<<<<<");
@@ -52,6 +56,12 @@
     NSLog(@">>>>>>ClassAndObject showDifferenceWithClassClusterMethod Test<<<<<<");
     NSLog(@"class_getName Method            %s", class_getName([timer class]));
     NSLog(@"class_getSuperClass Method      %@", class_getSuperclass([timer class]));
+}
+
+- (void)showHelloMethodSEL {
+    NSLog(@">>>>>>ClassAndObject showHelloMethodSEL<<<<<<");
+    SEL sel = @selector(hello:);
+    NSLog(@"sel             %p", sel);
 }
 
 @end
