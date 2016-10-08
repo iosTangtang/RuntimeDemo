@@ -97,6 +97,7 @@
     [run setAssociatedObject:@"runtime_runtimeObject_associated"];
     
     NSLog(@"%@", run.associatedObject);
+    
 }
 
 
