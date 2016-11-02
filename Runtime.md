@@ -271,7 +271,7 @@ objc.h
 ```
 typedef struct objc_selector *SEL;
 ```
-很遗憾没找到objc_selector结构体。OC在编译的时候，会根据每一个方法的名字、参数序列，生成唯一的一个整型标识(地址)，即SEL。
+很遗憾没找到objc_selector结构体。
 
 ```
  SEL sel = @selector(hello);
